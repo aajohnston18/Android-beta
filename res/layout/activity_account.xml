@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="landscape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.whitworth.amanda.jortalia.Account">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:background="@mipmap/back" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Profile_Pic"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/Back"
+        android:layout_toEndOf="@+id/Back"
+        android:background="@mipmap/profile"
+        android:minHeight="150dp"
+        android:minWidth="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:id="@+id/User"
+        android:layout_alignTop="@+id/Profile_Pic"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country: "
+        android:id="@+id/Country"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/User"
+        android:layout_alignStart="@+id/User"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio: "
+        android:id="@+id/Bio"
+        android:textSize="20dp"
+        android:layout_above="@+id/LossNum"
+        android:layout_alignLeft="@+id/Country"
+        android:layout_alignStart="@+id/Country" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L: "
+        android:id="@+id/Losses"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/WinNum"
+        android:layout_toLeftOf="@+id/LossNum"
+        android:layout_toStartOf="@+id/LossNum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W: "
+        android:id="@+id/Wins"
+        android:textSize="30dp"
+        android:layout_below="@+id/Profile_Pic"
+        android:layout_toRightOf="@+id/Back"
+        android:layout_toEndOf="@+id/Back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/WinNum"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/Wins"
+        android:layout_toRightOf="@+id/Wins"
+        android:layout_toEndOf="@+id/Wins" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/LossNum"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/Losses"
+        android:layout_alignRight="@+id/Profile_Pic"
+        android:layout_alignEnd="@+id/Profile_Pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="charmandapanda"
+        android:id="@+id/Name"
+        android:layout_alignTop="@+id/User"
+        android:layout_toRightOf="@+id/User"
+        android:layout_toEndOf="@+id/User"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CountryChange"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/Country"
+        android:layout_toEndOf="@+id/Country"
+        android:textSize="20dp"
+        android:text="USA"
+        android:editable="true"
+        android:clickable="true"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BioChange"
+        android:textSize="20dp"
+        android:text="Hi, I really like war!"
+        android:layout_alignTop="@+id/Bio"
+        android:layout_toRightOf="@+id/Bio"
+        android:layout_toEndOf="@+id/Bio"
+        android:clickable="true"
+        android:editable="true" />
+</RelativeLayout>
